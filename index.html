@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 class="titulo">Calculo IMC</h1>
+            <section class="medidas">
+                <div class="peso">
+                    <label for="peso" id="textPeso">Peso 100 kg</label>
+                    <input id="peso" type="range" min="0" max="200" oninput="change()">
+                </div>
+
+                <div class="altura">
+                    <label for="altura" id="textAltura">Altura 150 cm</label>
+                    <input id="altura" type="range" min="0" max="300" oninput="change()">
+                </div>
+            </section>
+
+            <section class="resultado">
+                <h1 id="result">O seu IMC é </h1>
+                <h3 id="description"></h3>
+                <p id="tratamento"></p>
+            </section>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
